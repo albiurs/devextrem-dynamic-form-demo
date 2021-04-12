@@ -6,9 +6,14 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { TasksComponent } from './pages/tasks/tasks.component';
 import { DxDataGridModule, DxFormModule } from 'devextreme-angular';
+import {DevextremeDynamicFormComponent} from './pages/devextreme-dynamic-form/devextreme-dynamic-form.component';
 
 const routes: Routes = [
   {
+    path: 'dyn-form',
+    component: DevextremeDynamicFormComponent,
+    canActivate: [ AuthGuardService ]
+  },{
     path: 'tasks',
     component: TasksComponent,
     canActivate: [ AuthGuardService ]
