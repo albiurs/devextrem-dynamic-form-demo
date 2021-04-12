@@ -25,5 +25,10 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
+  },
+  "paths": {
+    "jszip": [
+      "node_modules/jszip/dist/jszip.min.js"
+    ]
   }
 }
